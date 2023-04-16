@@ -4,6 +4,7 @@ import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class QuanLy {
@@ -252,6 +253,12 @@ public class QuanLy {
             x.xuatThongTin();
         }
     }
+    public void sapXepTheoSoLuongMayTinh()
+    {
+        Collections.sort(mayTinh, new SapXepMayTinh());
+        System.out.println("\nDanh Sach May Tinh Sau Khi Sap Xep");
+        hienDanhSachMayTinh();
+    }
     public void ghiFileKM(String fileName)
     {
         try
@@ -428,8 +435,9 @@ public class QuanLy {
         System.out.println("|10. Chinh sua Thong tin (Phieu nhap kho, Phieu xuat kho)|");
         System.out.println("|11. Luu file DS Phieu                                   |");
         System.out.println("|12. Doc file DS Phieu                                   |");
-        System.out.println("|11. Luu file DS May Tinh                                   |");
-        System.out.println("|12. Doc file DS Phieu                                   |");
+        System.out.println("|13. Luu file DS May Tinh                                |");
+        System.out.println("|14. Doc file DS Phieu                                   |");
+        System.out.println("|15. Sap xep so luong may tinh                           |");
         System.out.println("|--------------------------------------------------------|");
     }
     public void menuSuaDoiPhieu() {
