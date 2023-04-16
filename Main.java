@@ -72,6 +72,9 @@ public class Main {
                     tenFile = sc.nextLine();
                     a.docFileMT(tenFile);
                     break;
+                case 15:
+                    a.sapXepTheoSoLuongMayTinh();
+                    break;
             }
         }while (chon != 0) ;
     }
